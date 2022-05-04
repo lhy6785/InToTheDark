@@ -6,6 +6,9 @@ using System;
 [System.Serializable]
 public class SaveDataClass
 {
+    //영광의 첫 플레이
+    public bool isFirstPlay;
+
     public enum playerStartPoint
     {
         B1rightDoor, B1Library, B2leftDoor, B2CabinetRoom, B2Gallery, B2rightDoor, B3leftDoor, 
@@ -25,7 +28,6 @@ public class SaveDataClass
     public List<ItemClass> itemList;
 
     //지하 1층
-    public bool texton;
     public bool isFirstGB;
     public bool isUnlocked;
     public bool isDiaryClicked;
@@ -69,6 +71,8 @@ public class SaveDataClass
 
     public SaveDataClass()
     {
+        isFirstPlay = true;
+        
         //플레이어 위치
         playerXstartPoint = -35f;
         currFloor = "B1";
@@ -81,7 +85,6 @@ public class SaveDataClass
         itemList = new List<ItemClass>();
 
         //지하 1층
-        texton = false;
         isFirstGB = true;
         isUnlocked = false;
         isDiaryClicked = false;

@@ -9,7 +9,7 @@ public class StartScene : MonoBehaviour
     SaveDataClass saveData;
     SceneLoadManager sceneLoader;
     SoundManager inst;
-    [SerializeField] private AudioClip btnSound;
+    IntroScpt IntroScpt;
 
     void Start()
     {
@@ -17,20 +17,23 @@ public class StartScene : MonoBehaviour
         saveData = data.saveData;
         inst = SoundManager.inst;
         sceneLoader = SceneLoadManager.instance;
+        IntroScpt = FindObjectOfType<IntroScpt>();
     }
     
     public void LoadGame() // 버튼 누르면 실행될 함수
     {
-        inst.ButtonEffectPlay(btnSound);
+        inst.ButtonEffectPlay(inst.buttonOnStartScene);
         data.Load();
         sceneLoader.LoadScene(saveData.currFloor); // ()안에 있는 이름을 가진 씬으로 전환됨
     }
 
     public void StartNewGame()
     {
-        inst.ButtonEffectPlay(btnSound);
+        inst.ButtonEffectPlay(inst.buttonOnStartScene);
         data.saveData = new SaveDataClass();
+        data.saveData.isFirstPlay = false;
         data.Save();
-        sceneLoader.LoadScene("B1");
+        IntroScpt.nowstart();
+        IntroScpt.introCanvas.SetActive(true);
     }
 }

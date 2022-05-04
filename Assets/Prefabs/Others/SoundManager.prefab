@@ -65,12 +65,12 @@ MonoBehaviour:
   mainBGM: {fileID: 8300000, guid: 7dbc12bb779156a4a89f298da2519397, type: 3}
   B12BGM: {fileID: 8300000, guid: 9417dd2cbb927ce46aeb9572a061e557, type: 3}
   B34BGM: {fileID: 0}
-  endingBGM: {fileID: 8300000, guid: 120fe3780bf63ab438939859e97eec13, type: 3}
+  endingBGM: {fileID: 8300000, guid: c817db61fa63a894b9a5f24e1f369c8b, type: 3}
   getItemEffect: {fileID: 8300000, guid: d5dcdd2bb6a1391479f7bca99f725ab4, type: 3}
   playerWalkEffect: {fileID: 8300000, guid: 817c3cb7eb93fe943adc8c20215e495e, type: 3}
-  monsterWalkEffect: {fileID: 0}
   buttonOnStartScene: {fileID: 8300000, guid: 0038df261c90a7946a938a15ff8363e2, type: 3}
   buttonEffect: {fileID: 8300000, guid: 2e01c96af2367524bb6c0946d0bdd944, type: 3}
+  stabButtonEffect: {fileID: 8300000, guid: fc74f22c5f42eda4e8f31bfb6c10b8a9, type: 3}
   conversationEffect: {fileID: 8300000, guid: 9c4fc030722aee9479b326324ffd5d36, type: 3}
   puzzleFailedEffect: {fileID: 8300000, guid: 156a4b049186d31488fa606e39cda544, type: 3}
   doorOpenEffect: {fileID: 8300000, guid: 220dc2c186f8e3245bc9c12c076fb28c, type: 3}
@@ -81,7 +81,7 @@ MonoBehaviour:
   unlockEffect: {fileID: 8300000, guid: e6eb2b6f7da7d6b4fadaca17082f3a9a, type: 3}
   unlockFailedEffect: {fileID: 8300000, guid: 4c93ac94ffa65e54b9c14f0930d6a899, type: 3}
   doorUnlockEffect: {fileID: 8300000, guid: 15f4baf1728e5324a9e277210d69561f, type: 3}
-  lockNumberChangeEffect: {fileID: 8300000, guid: b41250216f1774043b156eceb1cf89c7,
+  lockNumberChangeEffect: {fileID: 8300000, guid: 0eb044247b673c143a0d016a0b76ba73,
     type: 3}
   pocketwatchEffect: {fileID: 8300000, guid: e6eb2b6f7da7d6b4fadaca17082f3a9a, type: 3}
   swipeStatueEffect: {fileID: 8300000, guid: 1d21d673118d0714eab6652627cb7a2c, type: 3}
@@ -106,10 +106,10 @@ MonoBehaviour:
   ra_hEffect: {fileID: 8300000, guid: 3a136289d45ecf74695640d1458d2068, type: 3}
   si_hEffect: {fileID: 8300000, guid: 05343b9133d92c941ad2939a09d4125c, type: 3}
   consoleTouchEffect: {fileID: 8300000, guid: 6fb52614e7f523b4284ed0276bae7877, type: 3}
-  capsuleBrokenEffect: {fileID: 0}
+  capsuleBrokenEffect: {fileID: 8300000, guid: 9e2417f53f3aebf4b85e5bedf66854de, type: 3}
+  handsScreamEffect: {fileID: 8300000, guid: 26af1bd346fef2a41ac541a49ceeec15, type: 3}
   doorSlideEffect: {fileID: 8300000, guid: 7f9a884ae513f2f45b73a0beb2deec4c, type: 3}
   playerScreamEffect: {fileID: 8300000, guid: fddac895f73548949ba371b1a8825235, type: 3}
-  priestWalkEffect: {fileID: 8300000, guid: 6dc183586e5821a4bb4fbf20ec7871b1, type: 3}
 --- !u!82 &5960547632288174875
 AudioSource:
   m_ObjectHideFlags: 0

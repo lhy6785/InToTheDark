@@ -13,7 +13,7 @@ public class Detect : MonoBehaviour
     public Camera mainCamera;
 
     SlotSelectionMng slotSelectMng;
-    Canvas canvas;
+    public Canvas canvas;
     GraphicRaycaster graphicRay;
     List<RaycastResult> results = new List<RaycastResult>();
     
@@ -23,7 +23,7 @@ public class Detect : MonoBehaviour
         uiManager = FindObjectOfType<UI>();
         
         slotSelectMng = FindObjectOfType<SlotSelectionMng>();
-        canvas = FindObjectOfType<Canvas>();
+        //canvas = FindObjectOfType<Canvas>();
         graphicRay = canvas.transform.GetComponent<GraphicRaycaster>();
     }
 
@@ -60,7 +60,6 @@ public class Detect : MonoBehaviour
             Object obj = hit.collider.GetComponent<Object>();
             if(obj.enabled && !uiManager.nowTexting)
             {
-                //Debug.Log("지금은 check 돌아감");
                 obj.ObjectFunction(); 
             }
         }
